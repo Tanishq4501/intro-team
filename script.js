@@ -46,9 +46,14 @@ window.addEventListener('resize', () => {
 // --- INTERACTION LOGIC ---
 
 function hackAction(name) {
-    const originalText = document.querySelector(`.terminal-card h2:contains('${name}')`)?.innerText || name;
+    // const originalText = document.querySelector();
     alert(`[SYSTEM]: Accessing encrypted repository for ${name}... \n[STATUS]: Access Granted.`);
-    // window.open('https://github.com/YOUR_GITHUB_USER', '_blank'); 
+    if (name=='Shubham'){
+        window.open('https://github.com/navahc09', '_blank');
+    }
+    else{
+        window.open('https://github.com/Tanishq4501', '_blank');
+    } 
 }
 
 document.getElementById('deploy-btn').addEventListener('click', (e) => {
